@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Karla" sans-serif;
+    font-size: 16px;
+    background-color:hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main{
+    width: 635px;
+    height: 475px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 216px 259px;
+    margin: 0;
+    border-radius: .5rem;
+}
+ 
+.one{
+    text-align: left;
+    margin: 0;
+    padding: 2.5rem 2rem 2.75rem 2.5rem;
+    background-color: white;
+    grid-column: 1 / -1;
+}
+.one h1{
+    color: hsl(179, 62%, 43%);
+    margin: 0;
+} 
+
+.one h2{
+    color:  hsl(71, 73%, 54%);
+    margin-bottom: .5rem;
+}
+
+.one p{
+    
+     margin: 0;
+     line-height: 2;
+    font-weight: 400;
+    padding-right: 3rem;
+    color: hsl(218, 22%, 67%);
+}
+
+.sign {
+    background-color: hsl(179, 62%, 43%);
+    color: whitesmoke;
+    font-weight: 400;
+    position: relative;
+    font-size: 18px;
+    padding: 40px  2.5rem;
+}
+
+.sign h1 span{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(179, 40%, 70%) ;
+}
+.sign h1{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 1rem;
+}
+.sign h2, h3{
+    margin: 0;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.sign h3{
+    padding-bottom: 1.75rem;
+    font-weight: 400;
+    color: hsl(178, 59%, 76%);
+}
+
+button{
+    background:  hsl(71, 73%, 54%);
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    /* margin-bottom: 40px ; */
+} 
+.why{
+  background: #4abebd;
+  color: white;
+  padding: 2.75rem 0 2rem 2.5rem;
+  font-weight: 400;
+}
+
+.why h1 {
+    font-size: 16px;
+    margin: 0;   
+    padding-bottom: 1.3rem;
+}
+ 
+ul{
+    margin: 0 0 5rem 0;
+}
+
+li{
+    color: hsl(180, 53%, 77%);
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 2px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media (max-width:1000px){
+
+       
+    body{
+         height: 100vh;
+         width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 72px  32px; */
+    }
+
+    main {
+        height: 870px;
+        width: 375px; 
+        align-self: center;
+        align-content: center;
+        justify-self: center;
+        /* justify-items: center; */
+        /* margin: auto; */
+        display: grid;
+        grid-template-columns: 312px;
+        grid-template-rows: 267px 228px 228px;
+    }
+
+.one{
+    text-align: left;
+    margin: 0;
+    padding: 2rem 24px 0 1.5rem;
+    background-color: white;
+    grid-column: 1 / -1;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.one h1{
+    color: hsl(179, 62%, 43%);
+    margin: 0;
+    padding:0 0 1.75rem 0;
+} 
+
+.one h2{
+    color:  hsl(71, 73%, 54%);
+    margin: 0;
+    font-size: 16px;
+    padding-bottom: 1.5rem;
+
+}
+
+.one p{
+    line-height: 1.5;
+    font-size: 16px;
+     margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    color: hsl(218, 22%, 67%);
+    padding-right: 2rem;
+
+}
+
+
+.sign {
+    color: whitesmoke;
+    /* font-size: 18px; */
+    padding: 1.75rem 1.5rem 1.5rem 1.5rem;
+}
+
+.sign h1 span{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: .5rem;
+    color:hsl(179, 48%, 68%);
+}
+
+.sign h2{
+    margin: 0;
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.sign h1{
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 14px;
+
+}
+
+.sign h3{
+    padding-bottom: 1.75rem;
+    margin: 0;
+}
+
+ button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  hsl(71, 73%, 54%);
+    width: 100%;
+    height: 48px;
+    margin: 0;
+} 
+
+.why{
+  grid-row: 3/-1;
+  background: #4abebd;
+  color: white;
+  padding:1.75rem 0 1.3rem 1.75rem;
+  font-weight: 400;
+  border-radius: 0 0 5px 5px;
+}
+
+.why h1 {
+    font-size: 18px;
+    padding-bottom: 1.4rem;
+    margin: 0;   
+}
+
+ul{
+    margin: 0;
+}
+
+li{
+    font-size: 14px;
+    margin: 0;
+}
+
+}
